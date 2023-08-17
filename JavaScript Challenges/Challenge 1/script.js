@@ -59,3 +59,9 @@ console.log(singleQuote);
 console.log(doubleQuote)
 console.log(tryThisAlso);
 console.log("Single and double quotes are used for regular strings.Backticks offer string interpolation, multi-line strings, and expression evaluation");
+
+// step 6
+let let1=" first";
+let let2=" second";
+let result=let1+let2;
+console.log(result);
