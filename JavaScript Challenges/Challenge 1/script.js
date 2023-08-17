@@ -81,3 +81,14 @@ let r6 = (2 > 8);
 console.log(r6);
 let r7= (2 >= 8);
 console.log(r7);
+
+//step 8
+let result0=5+3*2;
+console.log(result0);
+let result1=10/2+3;
+console.log(result1);
+let result2=10/(2+3);
+console.log(result2);
+
+console.log("the result are base on the priority of the operation first () than * or / and finally + or -");
+
