@@ -1,5 +1,6 @@
-var age=22;
- if(age>=20)
+//step 1
+var myage=22;
+ if(myage>=20)
     console.log("You can enter this room.");
 else console.log("You can't  enter this room.");
 
@@ -12,3 +13,22 @@ console.log(expression1);
 console.log(expression2);
 console.log(expression3);
 console.log(expression4);
+
+//step 2
+
+const age = 25;
+const hasDriverLicense = true;
+const hasCar = false;
+
+let canDrive=false;
+ if(age>=18 && hasDriverLicense==true )
+    canDrive=true;
+console.log(canDrive);
+var canRentCar=false;
+if(age>=22 && hasDriverLicense==true && hasCar==false)
+    canRentCar=true;
+console.log(canRentCar);
+var needDriver=false;
+if(age<18 && hasDriverLicense==false && hasCar==false)
+needDriver=true;
+console.log(needDriver);
