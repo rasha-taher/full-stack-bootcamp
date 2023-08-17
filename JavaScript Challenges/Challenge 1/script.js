@@ -65,3 +65,19 @@ let let1=" first";
 let let2=" second";
 let result=let1+let2;
 console.log(result);
+
+//step 7
+let r1 = (2 === 8);
+console.log(r1);
+let r2 = (2 === '2');
+console.log(r2);
+let r3 = (7 !== 8);
+console.log(r3);
+let r4 = (2 < 8);
+console.log(r4);
+let r5 = (2 <= 1);
+console.log(r5);
+let r6 = (2 > 8);
+console.log(r6);
+let r7= (2 >= 8);
+console.log(r7);
