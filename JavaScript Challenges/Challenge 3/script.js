@@ -39,3 +39,14 @@ console.log(compute(800, 100 , "/"));
 console.log(compute(300, 75 , "-"));
 console.log(compute(12, 23 , "*"));
 console.log(compute(8078, 12005 , "+"));
+
+//step 2
+const squareNumber = (number) => {
+    return number * number;
+};
+  
+console.log(squareNumber(5));
+console.log(squareNumber(23));
+
+let globalVar=10;
+console.log(squareNumber(globalVar));
