@@ -42,6 +42,7 @@ console.log(compute(8078, 12005 , "+"));
 
 //step 2
 const squareNumber = (number) => {
+    let localVar=7;
     return number * number;
 };
   
@@ -50,3 +51,30 @@ console.log(squareNumber(23));
 
 let globalVar=10;
 console.log(squareNumber(globalVar));
+// console.log(squareNumber(localVar));
+
+//step 3
+console.log( 'from 1 to 10');
+for(let i=1 ; i < 10;i++) console.log(i);
+
+console.log( 'from 10 to 1');
+let j = 10;
+
+while (j >= 1) {
+    console.log(j);
+    j--;
+}
+console.log( 'print the numbers from 1 to 10, but only print the numbers that are even');
+let k=1;
+do{
+    if(k%2==0)
+    console.log(k);
+    k++;
+}while(k<=10);
+
+
+let arr =['apple', 'banana', 'ananas' , "strawberry", 'watermelon' , "orange"];
+for (let i=0; i<arr.length;i++){
+    if(arr[i].length>5)
+    console.log(arr[i]);
+}
