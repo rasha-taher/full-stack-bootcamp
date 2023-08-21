@@ -18,25 +18,15 @@ console.log(lastName);
 console.log(DOB);
 
 //step 4
-let text="This is a text";
-let bool1= true;
-let bool2 =false;
-let number =1215;
-let string_number="999"
-let something={};
-let array=[];
-let nothing= null;
-let idk="undefined";
-
-console.log(text);
-console.log(bool1);
-console.log(bool2);
-console.log(number);
-console.log(string_number);
-console.log(something);
-console.log(array);
-console.log(nothing);
-console.log(idk);
+console.log(typeof"This is a text");
+console.log(typeof true);
+console.log(typeof false);
+console.log(typeof 1215);
+console.log(typeof "999")
+console.log(typeof {});
+console.log(typeof []);
+console.log(typeof null);
+console.log(typeof undefined);
 
 
 //step 5
