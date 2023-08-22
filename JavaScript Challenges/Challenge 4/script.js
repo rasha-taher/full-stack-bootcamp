@@ -7,4 +7,4 @@ let personalInfo={
     height:165,
     location: "Beirut, Lebanon",
     nationality : "Lebanese"
-}
+};
