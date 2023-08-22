@@ -24,3 +24,15 @@ let additionalInfo={
 let fullInfo= {...personalInfo, ...additionalInfo};
 console.log(fullInfo);
 
+//step 3
+
+
+let [firstNum, secondNum, thirdNum]= fiveNumbers;
+ console.log(firstNum);  
+ console.log(secondNum); 
+ console.log(thirdNum);
+
+ let {name , age, height}=personalInfo;
+console.log(name);
+console.log(age)
+console.log(height);
