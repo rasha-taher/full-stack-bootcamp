@@ -36,3 +36,41 @@ let [firstNum, secondNum, thirdNum]= fiveNumbers;
 console.log(name);
 console.log(age)
 console.log(height);
+
+//step 4 
+
+const personalInformation = {
+    name: "Rasha",
+    age : 22,
+    height:165,
+    location: "Beirut, Lebanon",
+    nationality : "Lebanese",
+    contactInfo: {
+      email: "my email",
+      phone: "123-456-7890"
+    }
+  };
+  console.log( "My email "+ personalInformation.contactInfo.email);
+  console.log("My phone" + personalInformation.contactInfo.phone);
+
+ let[firstNumber , secondNumber, ...restOfNumbers]=fiveNumbers;
+ console.log("first Number " + firstNumber);
+ console.log("the second number "+ secondNumber);
+ console.log("the rest of the array " + restOfNumbers);
+
+ let person1={
+    Name: "John",
+    age: 23,
+    occupation: "web developer",
+    status: "single"
+};
+
+
+let company= {
+    Brand:"some brand",
+    years: 20,
+    occupation:"software development"
+}
+let mergedObject = { ...person1, ...company };
+
+console.log(mergedObject);
