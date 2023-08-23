@@ -61,21 +61,13 @@ newButton.addEventListener("mouseout", function () {
 });
 
 //Event Delegation
-//  let ori= document.getElementById('original');
-//  let buttons=document.getElementsByClassName('button');
-// buttons.addEventListener("click", function() {
-//      ori.textContent= buttons.textContent;
-// });
 
-const originDiv = document.getElementById("original");
+let originDiv = document.getElementById("original");
+let anyButton = document.querySelector('button');
 
-// Add event listener to the container
-originDiv.addEventListener("click", function (event) {
-  // Check if the clicked element is a button
-  if (event.target.tagName === "BUTTON") {
-    // Log the text content of the clicked button
-    console.log("Clicked button:", event.target.textContent);
-  }
+originDiv.addEventListener("click", function () {
+    if(anyButton.click)
+  console.log(anyButton.textContent);
 });
 
 //Form Data Extraction
