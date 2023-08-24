@@ -82,24 +82,23 @@ document.addEventListener('keydown', function(event) {
 subButton.addEventListener("click", function (event) {
    event.preventDefault();
    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
    if(! pattern.test(email.value)){
         email.setAttribute("placeholder", "Please enter a valid email address.");
-        email.style.borderColor = "red"
+        email.style.borderColor = "red";
         return false;
     }else{
     email.style.borderColor="gray";
-    return true;
-    }
- });  
+    } 
 
- 
- subButton.addEventListener("click", function (event) {
-    event.preventDefault();
- if(password.value!==confpassword.value){
+     if(password.value!==confpassword.value){
     password.setAttribute("placeholder", "Passwords don't match");
      confpassword.setAttribute("placeholder", "Passwords don't match");
      alert("Passwoords don't match ")
- }
+    }else {password.style.borderColor = "gray"; // Reset border color for valid input
+    confpassword.style.borderColor = "gray"; // Reset border color for valid input
+  }
+    alert("Success")
 });
 
 let inputs = document.querySelectorAll('input');
