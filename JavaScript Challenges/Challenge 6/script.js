@@ -24,17 +24,22 @@ function updateClock() {
   // Update the clock every second (1000 milliseconds)
   setInterval(updateClock, 1000);
   
-  function delayedPromise() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve("Promise resolved!");
-      }, 2000); // 2000 milliseconds (2 seconds)
-    });
-  }
-  
-  delayedPromise().then(message => {
-    console.log(message); // Output: Promise resolved!
-  }).catch(error => {
-    console.error(error);
+
+  let p=new Promise((resolve)=>{
+    setTimeout(function() {resolve("Promise resolved ");}, 2000);
   });
+
+  p.then(message=>{
+    alert(message); // Alert: Promise resolved!
+    return "Chained message!";
+  }).then((chainedMessage) => {
+    console.log(chainedMessage); // Output: Chained message!
+  }).catch((error) => {
+    console.log("Error:", error);
+  });
+ 
+  
+  
+  
+  
   
