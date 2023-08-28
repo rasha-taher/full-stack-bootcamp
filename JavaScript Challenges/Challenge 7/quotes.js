@@ -114,20 +114,19 @@ authordiv.textContent=quotes.author
 
 let authorBtn =document.getElementById("authorBtn")
  let authorSearch=document.getElementById("authorSearch")
- let authorclass = document.getElementById("author")
- let blockquotediv= document.getElementsByTagName('blockquote')
 
-function searching(arr){
-
-  for (let quote of quotesArray ){
-    if(quote.author==="Thomas Edison"){
-      quotesdiv.style.display="block"
-      console.log('inside if')
-    }else {
-      quotesdiv.style.display="none"
-      console.log('inside if else')
+ 
+function searching(arr, authorName) {
+  for (let quote of arr) {
+    if (quote.author === authorName) {
+      quote.element.style.display = "block";
+    } else {
+      quote.element.style.display = "none";
     }
   }
 }
 
-authorBtn.addEventListener('click', searching(quotesArray))
+authorBtn.addEventListener('click', function() {
+  const authorName = authorSearch.value;
+  searching(quotesArray, authorName);
+});
