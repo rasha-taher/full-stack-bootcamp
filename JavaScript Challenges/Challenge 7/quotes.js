@@ -94,3 +94,40 @@ const quotesArray = [
       "Hell, there are no rules here-- we're trying to accomplish something.",
   },
 ];
+let quotesdiv= document.getElementById("quotes")
+
+
+for(let quotes of quotesArray){
+  let block = document.createElement('blockquote')
+  block.textContent=quotes.content
+ quotesdiv.appendChild(block)
+
+let authordiv = document.createElement('div')
+block.appendChild(authordiv)
+authordiv.setAttribute('class', "author")
+
+let cite=document.createElement('cite')
+authordiv.appendChild(cite);
+authordiv.textContent=quotes.author
+}
+
+
+let authorBtn =document.getElementById("authorBtn")
+ let authorSearch=document.getElementById("authorSearch")
+ let authorclass = document.getElementById("author")
+ let blockquotediv= document.getElementsByTagName('blockquote')
+
+function searching(arr){
+
+  for (let quote of quotesArray ){
+    if(quote.author==="Thomas Edison"){
+      quotesdiv.style.display="block"
+      console.log('inside if')
+    }else {
+      quotesdiv.style.display="none"
+      console.log('inside if else')
+    }
+  }
+}
+
+authorBtn.addEventListener('click', searching(quotesArray))
