@@ -37,6 +37,7 @@ You have an array of URLs. Fetch images from all these URLs simultaneously and l
 
 Use the following API endpoint to get random dog images: [https://dog.ceo/api/breeds/image/random](https://dog.ceo/api/breeds/image/random).
 
+
 Commit: "Challenge 6.1 - Done with Step 4".
 
 Don't forget to push your code to GitHub!
